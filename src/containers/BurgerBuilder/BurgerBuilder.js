@@ -37,18 +37,6 @@ class BurgerBuilder extends Component {
         });
     }
 
-    clearIngredientHandler = () => {
-        this.setState({
-            ingredients: {
-                'salad': 0,
-                'bacon': 0,
-                'meat': 0,
-                'cheese': 0
-            },
-            totalPrice: 1
-        })
-    }
-
     purchaseCancelHandler = () => {
         this.setState({
             purchasing: false
